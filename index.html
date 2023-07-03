@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header id="header">
+     
+        <nav>
+            <h1><span>My</span>-Portfolio</h1>
+            <ul id="sidemenu">
+                <li class="hello" onclick="hello1()"><a href="#header">Home</a></li>
+                <li class="hello" onclick="hello1()"><a href="#about-section">About</a></li>
+                <li class="hello" onclick="hello1()"><a href="#portfolio">Portfolio</a></li>
+                <li class="hello" onclick="hello1()"><a href="#contact-me">Contact</a></li>
+                <i class="fas fa-times" onclick="closemeu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()" ></i>
+        </nav>
+             <div class="container">
+                <div class="left-section">
+                    <p>Front-end Developer</p>
+                     <h1>Hi, I'm <span>Manoj</span></h1>
+
+                </div>
+        <div class="right-section">
+            <img src="assets\Manoj.jpg" alt="">
+        </div>
+    </div>
+    </header>
+    
+    <div class="about-section" id="about-section">
+        <h1 class="about-me">About Me</h1>
+        <p>My name is Manoj and I am a front-end developer as well as  I am learning full stack web development from Pw skill( I neuron) apart from this i am a Bcom graduate from Satyawati college delhi university.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>Git and Github</li>
+                    <li>MySql</li>
+                    <li>MongoDb</li>
+                </ul>
+            </div>
+<div class="tab-contents" id="education">
+    <ul>
+        <li>12th from Guru Tegh Bahadur Public School</li>
+        <li>12th stream Commerce with Computer Science</li>
+        <li>Bcom graduate from Satyawati College</li>
+        
+    </ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+   <li>I am fresher in web-development but</li> 
+    <li>i have created landing pages</li> 
+     <li>and also made application like:</li>
+     <li> E Commerce-website,Calculator app,quiz app, Tic Toe and Food order App.</li>
+    </ul>
+</div>   
+    </div>
+
+    <div id="portfolio">
+        <div >
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="mywork-img" src="assets\todoapp.png" alt="">
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>This is TodoApp in this app you can add your daily task.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="mywork-img" src="assets\Landing Page.png" alt="">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>This is a landing page it was an assignment.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="mywork-img" src="   assets\Responsive.png" alt="">
+                    <div class="layer">
+                        <h3>Responsive webpage</h3>
+                        <p>This is a responsive webpage,it is created by me.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+         
+      
+   <div class="contact-me" id="contact-me">
+    <div class="contact-container">
+       <div class="contact-left">
+        <h1>Contact Me</h1>
+        <p><a href="mailto:manojparmarawm@gmail.com"><i class="fas fa-paper-plane"></i></a>manojparmarawm@gmail.com</p>
+        <p><a href="tel:9599397311"><i class="fas fa-phone-square-alt"></i></a>9599397311</p>
+        <div class="social-icons">
+            <a href="https://wa.me/919599397311" ><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/manoj-manoj-872974260/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Manojparm"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/manojparmar___/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+       <a href="assets\mycv.pdf" class="btn btn2" download="">Download CV</a>
+       </div>
+     <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message"  cols="30" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2 " id="mybtn1" onclick="effects()">Submit</button>
+        </form>
+     </div>
+    </div>
+   </div>
+
+   <div class="bottom">
+       <h2>Thanks for visiting</h2>
+   </div>
+  <script src="script.js"></script> 
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> 
+ 
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfanJtB3rGJhgXpbQYmXJZuTquXNMEqiTKtqyWwSdsRUxbBMPhJxfDHMraTUIdPUYW/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
