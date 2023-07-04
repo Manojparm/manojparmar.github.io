@@ -30,3 +30,10 @@ let closee=document.getElementById("sidemenu");
 function hello1(){
     closee.style.right="-200px"
 }
+
+let resetForm=document.getElementById("myContactForm");
+resetForm.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    resetForm.reset();
+    
+});
